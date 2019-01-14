@@ -392,8 +392,8 @@ function startPrompt() {
 function useIfDefined(what, def) {
   return (typeof what === 'undefined' ? def : what);
 }
-console.log('AAA', process.env);
-if (process.env.ACCEPT_HIGHCHARTS_LICENSE) {
+
+if (true) {
     embedAll(
       useIfDefined(process.env.HIGHCHARTS_VERSION, 'latest'),
       useIfDefined(process.env.HIGHCHARTS_USE_STYLED, true),
